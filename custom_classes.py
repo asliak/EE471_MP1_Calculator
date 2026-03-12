@@ -4,12 +4,16 @@ class Calculator(object):
     
     def add(self, x, y):
         self._current_val = x + y
+        return self._current_val
 
     def subtract(self, x, y):
         self._current_val = x - y
+        return self._current_val
 
     def multiply(self, x, y):
         self._current_val = x * y
+        return self._current_val
+
     def divide(self, x, y):
         if y == 0:
             raise ValueError("Divider can't be 0!")
